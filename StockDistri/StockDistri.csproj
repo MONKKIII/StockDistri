@@ -77,6 +77,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MVVM\View\UserLogIn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
@@ -85,6 +89,9 @@
     </Compile>
     <Compile Include="MVVM\View\MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\UserLogIn.xaml.cs">
+      <DependentUpon>UserLogIn.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

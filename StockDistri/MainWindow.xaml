@@ -21,7 +21,7 @@
 
 
             <Grid HorizontalAlignment="Stretch">
-                <Label Content="SotckDistri"
+                <Label Content="StockDistri"
                     Foreground="Gray"
                     FontWeight="Semibold"/>
 
@@ -58,9 +58,10 @@
         </Border>
 
         <Border Height="25"
-            Background="White"
-            DockPanel.Dock="Top"
-            VerticalAlignment="Top">
+                Background="#272727"
+                DockPanel.Dock="Top"
+                VerticalAlignment="Top"
+                x:Name="BorderNavigation">
 
 
             <Grid HorizontalAlignment="Stretch">
@@ -68,11 +69,10 @@
                     Foreground="Gray"
                     FontWeight="Semibold"/>
 
-                <Frame x:Name="ReturnMeny"/>
                 <Button Width="Auto"
                         Height="Auto"
                         Content="Menu"
-                        Background="Blue"
+                        Background="Transparent"
                         Foreground="Gray"
                         FontWeight="Bold"
                         HorizontalContentAlignment="Stretch"
