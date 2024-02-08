@@ -18,15 +18,55 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Button Grid.Row="0"
-                    Content="Test"
-                    Width="Auto"
-                    Height="Auto">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Row="0"
+                     Grid.Column="0"
+                     Grid.ColumnSpan="2"
+                     Margin="10"
+                     Text="Code Article :"
+                     IsHitTestVisible="False"
+                     Background="Transparent"
+                     Foreground="Gray"
+                     FontWeight="Bold"
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Center"
+                     Width="Auto"
+                     Height="Auto">
+            </TextBlock>
+
+            <TextBox Grid.Row="0"
+                     Grid.Column="0"
+                     Grid.ColumnSpan="2"
+                     Background="Transparent"
+                     Foreground="Gray"
+                     FontWeight="Bold"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     BorderBrush="#202020"
+                     BorderThickness="2"
+                     MinWidth="70"
+                     MaxWidth="70">
+            </TextBox>
+
+            <Button Grid.Row="3"
+                    Grid.Column="2"
+                    Content="Céation"
+                    Click="CloseFicheArticles_Click">
+
             </Button>
 
-            <Button Grid.Row="1"
+            <Button Grid.Row="3"
+                    Grid.Column="3"
                     Content="Fermer"
                     Click="CloseFicheArticles_Click">
 

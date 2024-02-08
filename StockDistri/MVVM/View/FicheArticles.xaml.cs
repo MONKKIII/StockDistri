@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using static StockDistri.MVVM.View.FicheArticles;
 namespace StockDistri.MVVM.View
 {
     /// <summary>
