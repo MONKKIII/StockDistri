@@ -18,8 +18,6 @@ namespace StockDistri
 
         private NavigationService navigationService;
 
-        private NavigationService navigationService;
-
         public MainWindow()
         {
             InitializeComponent();
