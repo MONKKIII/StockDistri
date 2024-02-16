@@ -23,7 +23,9 @@
             </StackPanel>
 
             <Label Content="Liste des utilisateurs :" FontWeight="Bold" Foreground="Gray" />
-            <ScrollViewer Height="250">
+            <ScrollViewer Height="Auto"
+                          MinHeight="250"
+                          MaxHeight="250">
                 <ListView x:Name="userListView"
                       Background="#202020"
                       Foreground="Gray">
