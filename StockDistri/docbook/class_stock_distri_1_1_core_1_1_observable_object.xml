@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_stock_distri_1_1_core_1_1_observable_object" xml:lang="en-US">
+<title>StockDistri.Core.ObservableObject Class Reference</title>
+<indexterm><primary>StockDistri.Core.ObservableObject</primary></indexterm>
+Inheritance diagram for StockDistri.Core.ObservableObject:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_stock_distri_1_1_core_1_1_observable_object__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for StockDistri.Core.ObservableObject:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_stock_distri_1_1_core_1_1_observable_object__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_core_1_1_observable_object_1a8a963acd33a3f64beec223018275d221"/>void <emphasis role="strong">OnPropertyChanged</emphasis> ([CallerMemberName] string name=null)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Events    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_core_1_1_observable_object_1ade41fe279fb32f3ebcbe07d7c8307b24"/>PropertyChangedEventHandler <emphasis role="strong">PropertyChanged</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+Core/ObservableObject.cs</section>

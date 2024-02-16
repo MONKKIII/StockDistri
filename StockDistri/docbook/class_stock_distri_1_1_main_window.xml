@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_stock_distri_1_1_main_window" xml:lang="en-US">
+<title>StockDistri.MainWindow Class Reference</title>
+<indexterm><primary>StockDistri.MainWindow</primary></indexterm>
+<para>
+
+<para>Logique d&apos;interaction pour MainWindow.xaml. </para>
+ 
+</para>
+Inheritance diagram for StockDistri.MainWindow:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_stock_distri_1_1_main_window__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for StockDistri.MainWindow:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_stock_distri_1_1_main_window__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_main_window_1a780faf336ad726e150da12f05fb192fc"/><emphasis role="strong">MainWindow</emphasis> (string username)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_main_window_1a98b425f25a9290eff0b5dbe125816c6e"/>void <emphasis role="strong">UpdateUsernameLabel</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_main_window_1ab9c979fb4705cd3ae3150a7b59fe62df"/>void <emphasis role="strong">InitializeComponent</emphasis> ()</para>
+
+<para>InitializeComponent. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_main_window_1ab9c979fb4705cd3ae3150a7b59fe62df"/>void <emphasis role="strong">InitializeComponent</emphasis> ()</para>
+
+<para>InitializeComponent. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_main_window_1ab9c979fb4705cd3ae3150a7b59fe62df"/>void <emphasis role="strong">InitializeComponent</emphasis> ()</para>
+
+<para>InitializeComponent. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_main_window_1a0b6e69499cab595e2eaa85d8126c839a"/>string <emphasis role="strong">Username</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Logique d&apos;interaction pour MainWindow.xaml. </para>
+
+
+
+<para>MainWindow. </para>
+<para>
+The documentation for this class was generated from the following files:</para>
+MainWindow.xaml.csobj/Debug/MainWindow.g.csobj/Debug/MainWindow.g.i.csobj/Debug/MVVM/ViewModel/MainWindow.g.i.cs</section>
+</section>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_user" xml:lang="en-US">
+<title>StockDistri.MVVM.View.User Class Reference</title>
+<indexterm><primary>StockDistri.MVVM.View.User</primary></indexterm>
+<para>
+
+<para>Logique d&apos;interaction pour ParametreUsers.xaml. </para>
+ 
+</para>
+Collaboration diagram for StockDistri.MVVM.View.User:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_user__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_user_1a7120dafb065d5412a1f1f259333a37b4"/>string <emphasis role="strong">Username</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_user_1acea915d971db849b5f17fa379f2c8660"/>string <emphasis role="strong">Password</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_user_1ae9e5e397f75938ec91117ab2688e4a6e"/>bool <emphasis role="strong">Administrator</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_user_1af734078db2ca0faccfd403d2859818f7"/>DateTime <emphasis role="strong">DatCre</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_user_1a375f3ae1c49bda8e17ea087c5ddbbd5d"/>DateTime <emphasis role="strong">DatMaj</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Logique d&apos;interaction pour ParametreUsers.xaml. </para>
+<para>
+The documentation for this class was generated from the following file:</para>
+MVVM/View/ParametreUsers.xaml.cs</section>
+</section>

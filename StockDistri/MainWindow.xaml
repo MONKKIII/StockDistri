@@ -9,7 +9,7 @@
     Background="#303030"
     WindowStyle="None"
     AllowsTransparency="True"
-    ResizeMode="CanMinimize"
+    ResizeMode="CanResizeWithGrip"
     Loaded="MainWindow_Loaded">
 
     <DockPanel>
@@ -17,9 +17,10 @@
         <!-- Barre de tâche -->
         <Border Height="25"
             Background="#252525"
+            x:Name="BorderMainState"
             MouseDown="Border_MouseDown"
             DockPanel.Dock="Top"
-            VerticalAlignment="Top">
+            VerticalAlignment="Center">
 
             <Grid HorizontalAlignment="Stretch">
                 <Label Content="StockDistri"
@@ -118,9 +119,10 @@
             </Grid>
         </Border>
 
-        <Grid>
+        <!-- Barre de défilement verticale -->
+        <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
             <Frame x:Name="mainFrame" NavigationUIVisibility="Hidden"/>
-        </Grid>
+        </ScrollViewer>
 
     </DockPanel>
 </Window>

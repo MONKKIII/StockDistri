@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_main_menu" xml:lang="en-US">
+<title>StockDistri.MVVM.View.MainMenu Class Reference</title>
+<indexterm><primary>StockDistri.MVVM.View.MainMenu</primary></indexterm>
+<para>
+
+<para>Logique d&apos;interaction pour MainMenu.xaml. </para>
+ 
+</para>
+Inheritance diagram for StockDistri.MVVM.View.MainMenu:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_main_menu__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for StockDistri.MVVM.View.MainMenu:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_main_menu__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_main_menu_1afd4f3fe3216f72864991e57558a615d1"/><emphasis role="strong">MainMenu</emphasis> (NavigationService navigationService)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_main_menu_1ad038540b4690e0b01a12858d1c0e4546"/>void <emphasis role="strong">InitializeComponent</emphasis> ()</para>
+
+<para>InitializeComponent. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_main_menu_1ad038540b4690e0b01a12858d1c0e4546"/>void <emphasis role="strong">InitializeComponent</emphasis> ()</para>
+
+<para>InitializeComponent. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Logique d&apos;interaction pour MainMenu.xaml. </para>
+
+
+
+<para>MainMenu. </para>
+<para>
+The documentation for this class was generated from the following files:</para>
+MVVM/View/MainMenu.xaml.csobj/Debug/MVVM/View/MainMenu.g.csobj/Debug/MVVM/View/MainMenu.g.i.cs</section>
+</section>

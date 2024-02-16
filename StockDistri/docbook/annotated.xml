@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="en-US">
+<title>Class List</title>
+Here are the classes, structs, unions and interfaces with brief descriptions:<link linkend="_class_stock_distri_1_1_app">StockDistri.App</link>
+<para>Logique d&apos;interaction pour App.xaml </para>
+<link linkend="_class_database_connection">DatabaseConnection</link><link linkend="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_fiche_articles">StockDistri.MVVM.View.FicheArticles</link>
+<para>FicheArticles </para>
+<link linkend="_class_xaml_generated_namespace_1_1_generated_internal_type_helper">XamlGeneratedNamespace.GeneratedInternalTypeHelper</link>
+<para>GeneratedInternalTypeHelper </para>
+<link linkend="_class_stock_distri_1_1_main_menu">StockDistri.MainMenu</link>
+<para>ButtonsView </para>
+<link linkend="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_main_menu">StockDistri.MVVM.View.MainMenu</link>
+<para>Logique d&apos;interaction pour MainMenu.xaml </para>
+<link linkend="_class_stock_distri_1_1_main_window">StockDistri.MainWindow</link>
+<para>Logique d&apos;interaction pour MainWindow.xaml </para>
+<link linkend="_class_stock_distri_1_1_core_1_1_observable_object">StockDistri.Core.ObservableObject</link><link linkend="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_parametre_generaux">StockDistri.MVVM.View.ParametreGeneraux</link>
+<para>ParametreGeneraux </para>
+<link linkend="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_parametre_users">StockDistri.MVVM.View.ParametreUsers</link>
+<para>ParametreUsers </para>
+<link linkend="_class_stock_distri_1_1_core_1_1_relay_command">StockDistri.Core.RelayCommand</link><link linkend="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_user">StockDistri.MVVM.View.User</link>
+<para>Logique d&apos;interaction pour ParametreUsers.xaml </para>
+<link linkend="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_user_log_in">StockDistri.MVVM.View.UserLogIn</link>
+<para>UserLogIn </para>
+</section>

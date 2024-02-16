@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_stock_distri_1_1_main_menu" xml:lang="en-US">
+<title>StockDistri.MainMenu Class Reference</title>
+<indexterm><primary>StockDistri.MainMenu</primary></indexterm>
+<para>
+
+<para>ButtonsView. </para>
+ 
+</para>
+Inheritance diagram for StockDistri.MainMenu:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_stock_distri_1_1_main_menu__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for StockDistri.MainMenu:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_stock_distri_1_1_main_menu__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_main_menu_1aa94519c01c7b757d6409befea8351ea8"/>void <emphasis role="strong">InitializeComponent</emphasis> ()</para>
+
+<para>InitializeComponent. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>ButtonsView. </para>
+<para>
+The documentation for this class was generated from the following file:</para>
+obj/Debug/MVVM/ViewModel/MainMenu.g.i.cs</section>
+</section>

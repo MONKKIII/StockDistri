@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_stock_distri" xml:lang="en-US">
+<title>StockDistri Namespace Reference</title>
+<indexterm><primary>StockDistri</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_stock_distri_1_1_app">App</link></para>
+
+<para>Logique d&apos;interaction pour App.xaml. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_stock_distri_1_1_main_menu">MainMenu</link></para>
+
+<para>ButtonsView. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_stock_distri_1_1_main_window">MainWindow</link></para>
+
+<para>Logique d&apos;interaction pour MainWindow.xaml. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

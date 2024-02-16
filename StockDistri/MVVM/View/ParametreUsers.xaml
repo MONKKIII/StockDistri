@@ -9,38 +9,50 @@
       Title="ParametreUsers">
 
     <Grid>
+        <!-- Conteneur principal -->
         <StackPanel Margin="10">
+            <!-- Champ de saisie pour le nom d'utilisateur -->
             <Label Content="Username:" IsHitTestVisible="False" Foreground="Gray" HorizontalAlignment="Center"/>
             <TextBox x:Name="txtUsername" Width="200" Margin="0,0,0,10"/>
 
+            <!-- Champ de saisie pour le mot de passe -->
             <Label Content="Password:" IsHitTestVisible="False" Foreground="Gray" HorizontalAlignment="Center"/>
             <PasswordBox x:Name="txtPassword" Width="200" Margin="0,0,0,10"/>
 
+            <!-- Boutons d'action -->
             <StackPanel Orientation="Horizontal"
                         HorizontalAlignment="Center">
                 <Button Content="Valider" Width="95" Click="ValidateModify_Click" Margin="0 0 5 0"/>
                 <Button Content="Créer l'utilisateur" Width="95" Click="ParaSaveButton_Click"/>
             </StackPanel>
 
+            <!-- Titre de la liste des utilisateurs -->
             <Label Content="Liste des utilisateurs :" FontWeight="Bold" Foreground="Gray" />
+
+            <!-- Liste des utilisateurs -->
             <ScrollViewer Height="Auto"
                           MinHeight="250"
-                          MaxHeight="250">
+                          MaxHeight="250"
+                          Background="#202020"
+                          Foreground="Gray">
                 <ListView x:Name="userListView"
                       Background="#202020"
                       Foreground="Gray">
+                    <!-- Définition de la vue de la liste -->
                     <ListView.View>
                         <GridView ScrollViewer.CanContentScroll="False">
+                            <!-- Colonnes de la grille -->
                             <GridViewColumn Header="Nom d'utilisateur" DisplayMemberBinding="{Binding Username}" Width="120"/>
                             <GridViewColumn Header="Mot De Passe" Width="120">
+                                <!-- Masquage du mot de passe (utiliser votre propre caractère de masquage ou logique ici) -->
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <TextBlock Text="********"/>
-                                        <!-- Use your own masking character or logic here -->
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
                             <GridViewColumn Header="Administrateur">
+                                <!-- Case à cocher pour le statut administrateur -->
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <CheckBox IsChecked="{Binding Administrator}" IsEnabled="False" />
@@ -49,7 +61,7 @@
                             </GridViewColumn>
                             <GridViewColumn Header="Date Création" DisplayMemberBinding="{Binding DatCre}" Width="120"/>
                             <GridViewColumn Header="Date Mise A Jour" DisplayMemberBinding="{Binding DatMaj}" Width="120"/>
-                            <!-- Add more columns as needed -->
+                            <!-- Ajouter plus de colonnes si nécessaire -->
                         </GridView>
                     </ListView.View>
                 </ListView>

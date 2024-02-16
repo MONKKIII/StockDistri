@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>My Project</title>
+    </info>
+<chapter>
+    <title>Namespace Documentation</title>
+<xi:include href="namespace_stock_distri.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_stock_distri_1_1_core.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_stock_distri_1_1_m_v_v_m.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_stock_distri_1_1_m_v_v_m_1_1_view.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_stock_distri_1_1_m_v_v_m_1_1_view_model.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_stock_distri_1_1_properties.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_xaml_generated_namespace.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="class_stock_distri_1_1_app.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_database_connection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_fiche_articles.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_xaml_generated_namespace_1_1_generated_internal_type_helper.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_stock_distri_1_1_main_menu.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_main_menu.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_stock_distri_1_1_main_window.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_stock_distri_1_1_core_1_1_observable_object.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_parametre_generaux.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_parametre_users.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_stock_distri_1_1_core_1_1_relay_command.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_user.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_user_log_in.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

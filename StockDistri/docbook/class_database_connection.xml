@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_database_connection" xml:lang="en-US">
+<title>DatabaseConnection Class Reference</title>
+<indexterm><primary>DatabaseConnection</primary></indexterm>
+Collaboration diagram for DatabaseConnection:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_database_connection__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_database_connection_1a50bab8544c083738cffcad0949b7235d"/>void <emphasis role="strong">ExecuteQuery</emphasis> (string query)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_database_connection_1ac97e19281bc981ffa8dd019a3c2d3a0d"/>DataTable <emphasis role="strong">ExecuteSelectQuery</emphasis> (string query)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+Database/DatabaseConnection.cs</section>

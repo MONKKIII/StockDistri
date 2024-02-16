@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_stock_distri_1_1_m_v_v_m_1_1_view" xml:lang="en-US">
+<title>StockDistri.MVVM.View Namespace Reference</title>
+<indexterm><primary>StockDistri.MVVM.View</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_fiche_articles">FicheArticles</link></para>
+
+<para>FicheArticles. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_main_menu">MainMenu</link></para>
+
+<para>Logique d&apos;interaction pour MainMenu.xaml. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_parametre_generaux">ParametreGeneraux</link></para>
+
+<para>ParametreGeneraux. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_parametre_users">ParametreUsers</link></para>
+
+<para>ParametreUsers. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_user">User</link></para>
+
+<para>Logique d&apos;interaction pour ParametreUsers.xaml. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_user_log_in">UserLogIn</link></para>
+
+<para>UserLogIn. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

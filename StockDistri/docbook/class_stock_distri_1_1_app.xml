@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_stock_distri_1_1_app" xml:lang="en-US">
+<title>StockDistri.App Class Reference</title>
+<indexterm><primary>StockDistri.App</primary></indexterm>
+<para>
+
+<para>Logique d&apos;interaction pour App.xaml. </para>
+ 
+</para>
+Inheritance diagram for StockDistri.App:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_stock_distri_1_1_app__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for StockDistri.App:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_stock_distri_1_1_app__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_app_1adfe83a63d6cd0d71b91433abbecbbcf7"/>void <emphasis role="strong">InitializeComponent</emphasis> ()</para>
+
+<para>InitializeComponent. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_app_1adfe83a63d6cd0d71b91433abbecbbcf7"/>void <emphasis role="strong">InitializeComponent</emphasis> ()</para>
+
+<para>InitializeComponent. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_app_1ad27fd1be96113d04027b3551d251890a"/>static void <emphasis role="strong">Main</emphasis> ()</para>
+
+<para>Application Entry Point. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_app_1ad27fd1be96113d04027b3551d251890a"/>static void <emphasis role="strong">Main</emphasis> ()</para>
+
+<para>Application Entry Point. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Logique d&apos;interaction pour App.xaml. </para>
+
+
+
+<para>App. </para>
+<para>
+The documentation for this class was generated from the following files:</para>
+App.xaml.csobj/Debug/App.g.csobj/Debug/App.g.i.cs</section>
+</section>

@@ -1,20 +1,24 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Data;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace StockDistri.MVVM.View
 {
     public partial class FicheArticles : Page
     {
         private DatabaseConnection databaseConnection;
+
         public FicheArticles()
         {
             InitializeComponent();
             databaseConnection = new DatabaseConnection();
 
             txtCodArt.TextChanged += TxtCodArt_TextChanged;
+            txtCodArt.KeyDown += TxtCodArt_KeyDown;
         }
 
         private void TxtCodArt_TextChanged(object sender, TextChangedEventArgs e)
@@ -25,6 +29,20 @@ namespace StockDistri.MVVM.View
 
             // Activer la saisie dans le champ "Libellé" si la longueur du code article est de 8
             txtLibelle.IsEnabled = (txtCodArt.Text.Length == 8);
+        }
+
+        private void TxtCodArt_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                // Si la longueur du texte est inférieure à 8, remplir automatiquement avec des zéros
+                if (txtCodArt.Text.Length < 8)
+                {
+                    string zeros = new string('0', 8 - txtCodArt.Text.Length);
+                    txtCodArt.Text = zeros + txtCodArt.Text;
+                    txtCodArt.CaretIndex = txtCodArt.Text.Length; // Déplacer le curseur à la fin
+                }
+            }
         }
 
         private void Valider_Click(object sender, RoutedEventArgs e)

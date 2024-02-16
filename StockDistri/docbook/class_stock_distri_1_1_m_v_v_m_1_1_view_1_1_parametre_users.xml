@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_parametre_users" xml:lang="en-US">
+<title>StockDistri.MVVM.View.ParametreUsers Class Reference</title>
+<indexterm><primary>StockDistri.MVVM.View.ParametreUsers</primary></indexterm>
+<para>
+
+<para>ParametreUsers. </para>
+ 
+</para>
+Inheritance diagram for StockDistri.MVVM.View.ParametreUsers:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_parametre_users__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for StockDistri.MVVM.View.ParametreUsers:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_parametre_users__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_parametre_users_1aa7227aa9227fbc9c06e2cdd61bc1ce7c"/><emphasis role="strong">ParametreUsers</emphasis> (NavigationService navigationService)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_parametre_users_1a61a055886c3fefff450495c25f9dc960"/>string <emphasis role="strong">HashPassword</emphasis> (string password)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_parametre_users_1a7bbde1b38f33948ec4ce5de0b9f339d2"/>void <emphasis role="strong">InitializeComponent</emphasis> ()</para>
+
+<para>InitializeComponent. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_parametre_users_1a7bbde1b38f33948ec4ce5de0b9f339d2"/>void <emphasis role="strong">InitializeComponent</emphasis> ()</para>
+
+<para>InitializeComponent. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>ParametreUsers. </para>
+<para>
+The documentation for this class was generated from the following files:</para>
+MVVM/View/ParametreUsers.xaml.csobj/Debug/MVVM/View/ParametreUsers.g.csobj/Debug/MVVM/View/ParametreUsers.g.i.cs</section>
+</section>

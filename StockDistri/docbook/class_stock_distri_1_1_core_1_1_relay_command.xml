@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_stock_distri_1_1_core_1_1_relay_command" xml:lang="en-US">
+<title>StockDistri.Core.RelayCommand Class Reference</title>
+<indexterm><primary>StockDistri.Core.RelayCommand</primary></indexterm>
+Inheritance diagram for StockDistri.Core.RelayCommand:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_stock_distri_1_1_core_1_1_relay_command__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for StockDistri.Core.RelayCommand:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_stock_distri_1_1_core_1_1_relay_command__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_core_1_1_relay_command_1ab7efe3298bc09be9453065fc7c335db4"/><emphasis role="strong">RelayCommand</emphasis> (Action&lt; object &gt; execute, Func&lt; object, bool &gt; canExecute=null)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_core_1_1_relay_command_1a41be2539d43c0757f6cab74ca11ec8ea"/>bool <emphasis role="strong">CanExecute</emphasis> (object parameter)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_core_1_1_relay_command_1a6f82ff3a2402af975aa50c83b8fe11e3"/>void <emphasis role="strong">Execute</emphasis> (object parameter)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_core_1_1_relay_command_1a13f972c5f36a7efd9b9025616f7db2c5"/>EventHandler <emphasis role="strong">CanExecuteChanged</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+Core/RelayCommand.cs</section>

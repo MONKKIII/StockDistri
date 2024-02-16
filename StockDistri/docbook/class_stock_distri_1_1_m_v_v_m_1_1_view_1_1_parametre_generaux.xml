@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_parametre_generaux" xml:lang="en-US">
+<title>StockDistri.MVVM.View.ParametreGeneraux Class Reference</title>
+<indexterm><primary>StockDistri.MVVM.View.ParametreGeneraux</primary></indexterm>
+<para>
+
+<para>ParametreGeneraux. </para>
+ 
+</para>
+Inheritance diagram for StockDistri.MVVM.View.ParametreGeneraux:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_parametre_generaux__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for StockDistri.MVVM.View.ParametreGeneraux:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_parametre_generaux__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_stock_distri_1_1_m_v_v_m_1_1_view_1_1_parametre_generaux_1a7a44f0bdfb8aee0c3f26f943af4a8ddf"/>void <emphasis role="strong">InitializeComponent</emphasis> ()</para>
+
+<para>InitializeComponent. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>ParametreGeneraux. </para>
+<para>
+The documentation for this class was generated from the following file:</para>
+obj/Debug/MVVM/View/ParametreGeneraux.g.i.cs</section>
+</section>

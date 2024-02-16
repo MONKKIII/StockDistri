@@ -24,6 +24,8 @@ namespace StockDistri
 
             mainFrame.Navigate(new UserLogIn(mainFrame.NavigationService));
 
+            StateChanged += MainWindow_StateChanged;
+
             Username = DataHolder.Username;
 
             // Gérer l'événement Loaded pour la mise à jour de l'interface utilisateur
@@ -36,6 +38,23 @@ namespace StockDistri
         public MainWindow(string username) : this()
         {
             Username = username;
+        }
+
+        private void MainWindow_StateChanged(object sender, EventArgs e)
+        {
+            // Vérifiez si la fenêtre est en mode maximisé
+            if (WindowState == WindowState.Maximized)
+            {
+                // Si la fenêtre est maximisée, définissez une marge supérieure pour éviter que les contrôles ne soient cachés
+                BorderMainState.Margin = new Thickness(5, 5, 5, 0);
+                BorderNavigation.Margin = new Thickness(6, 0, 5, 0);
+            }
+            else
+            {
+                // Si la fenêtre n'est pas maximisée, supprimez la marge supérieure
+                BorderMainState.Margin = new Thickness(0);
+                BorderNavigation.Margin = new Thickness(0);
+            }
         }
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
