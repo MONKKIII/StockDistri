@@ -34,6 +34,7 @@
                             BorderBrush="#202020"
                             BorderThickness="2"
                             IsHitTestVisible="False"
+                            IsReadOnly="True"
                             Margin="0 50 20 0">
                 </TextBox>
 
@@ -62,6 +63,7 @@
                         BorderBrush="#202020"
                         BorderThickness="2"
                         IsHitTestVisible="False"
+                        IsReadOnly="True"
                         Margin="0 0 20 0">
                 </TextBox>
 

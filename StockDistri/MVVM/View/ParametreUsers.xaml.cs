@@ -17,7 +17,7 @@ namespace StockDistri.MVVM.View
         // Modèle de données pour un utilisateur
         public string Username { get; set; } // Nom d'utilisateur
         public string Password { get; set; } // Mot de passe
-        public bool Administrator { get; set; } // Statut administrateur
+        public string Role { get; set; } // Rôle
         public DateTime DatCre { get; set; } // Date de création
         public DateTime DatMaj { get; set; } // Date de mise à jour
     }
@@ -48,7 +48,7 @@ namespace StockDistri.MVVM.View
         // Méthode pour charger les données utilisateur depuis la base de données
         private void LoadUserData()
         {
-            string query = "SELECT * FROM utilisateurs"; // Requête SQL pour récupérer les utilisateurs
+            string query = $"SELECT * FROM stockbase.utilisateurs"; // Requête SQL pour récupérer les utilisateurs
             DataTable result = databaseConnection.ExecuteSelectQuery(query); // Exécution de la requête
 
             if (result != null && result.Rows.Count > 0)
@@ -64,7 +64,7 @@ namespace StockDistri.MVVM.View
                     {
                         Username = row["Username"].ToString(),
                         Password = row["Password"].ToString(),
-                        Administrator = row["Administrateur"] != DBNull.Value && Convert.ToBoolean(row["Administrateur"]),
+                        Role = row["Role"].ToString(),
                         DatCre = row["DatCre"] != DBNull.Value ? Convert.ToDateTime(row["DatCre"]) : DateTime.MinValue,
                         DatMaj = row["DatMaj"] != DBNull.Value ? Convert.ToDateTime(row["DatMaj"]) : DateTime.MinValue
                     };
@@ -93,6 +93,7 @@ namespace StockDistri.MVVM.View
             // Ajouter du code ici pour enregistrer les paramètres
             string username = txtUsername.Text;
             string password = txtPassword.Password;
+            string selectedRole = ((ComboBoxItem)roleComboBox.SelectedItem).Tag.ToString();
 
             // Vérifier si le nom d'utilisateur contient des caractères invalides
             if (ContainsInvalidCharacters(username))
@@ -125,8 +126,8 @@ namespace StockDistri.MVVM.View
             string hashedPassword = HashPassword(password);
 
             // Construire la requête SQL avec le mot de passe hashé
-            string query = $"INSERT INTO utilisateurs (username, password, DATCRE, DATMAJ)" +
-                            $"VALUES ('{username}', '{hashedPassword}', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)";
+            string query = $"INSERT INTO stockbase.utilisateurs (username, password, role, DATCRE, DATMAJ)" +
+                            $"VALUES ('{username}', '{hashedPassword}', {selectedRole}, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)";
 
             // Exécuter la requête SQL
             DataTable result = databaseConnection.ExecuteSelectQuery(query);
@@ -135,6 +136,12 @@ namespace StockDistri.MVVM.View
             LoadUserData();
 
             MessageBox.Show("Utilisateur ajouté!");
+
+            // Réinitialiser les zones de texte après l'ajout de l'utilisateur
+            txtUsername.Text = string.Empty;
+            txtPassword.Password = string.Empty;
+            roleComboBox.SelectedIndex = 0; // Réinitialiser la sélection du rôle
+
         }
 
         // Méthode pour vérifier si le nom d'utilisateur contient des caractères invalides
@@ -151,7 +158,7 @@ namespace StockDistri.MVVM.View
         private bool IsUsernameTaken(string username)
         {
             // Vérifier si le nom d'utilisateur existe déjà dans la base de données
-            string query = $"SELECT COUNT(*) FROM utilisateurs WHERE username = '{username}'";
+            string query = $"SELECT COUNT(*) FROM stockbase.utilisateurs WHERE username = '{username}'";
             DataTable result = databaseConnection.ExecuteSelectQuery(query);
 
             if (result != null && result.Rows.Count > 0)
@@ -187,7 +194,7 @@ namespace StockDistri.MVVM.View
                 if (confirmationResult == MessageBoxResult.Yes)
                 {
                     User selectedUser = (User)userListView.SelectedItem;
-                    string query = $"DELETE FROM utilisateurs WHERE Username = '{selectedUser.Username}'";
+                    string query = $"DELETE FROM stockbase.utilisateurs WHERE Username = '{selectedUser.Username}'";
 
                     // Exécuter la requête SQL pour supprimer l'utilisateur sélectionné
                     DataTable deletionResult = databaseConnection.ExecuteSelectQuery(query);
@@ -228,8 +235,9 @@ namespace StockDistri.MVVM.View
                 return;
             }
 
-            // Mettre à jour le nom d'utilisateur de l'utilisateur sélectionné
             string newUsername = txtUsername.Text;
+            string password = txtPassword.Password;
+            string selectedRole = ((ComboBoxItem)roleComboBox.SelectedItem).Tag.ToString();
 
             // Vérifier si le nouveau nom d'utilisateur contient des caractères invalides ou est trop court/long
             if (ContainsInvalidCharacters(newUsername) || newUsername.Length < 4 || newUsername.Length > 13)
@@ -246,7 +254,9 @@ namespace StockDistri.MVVM.View
             }
 
             // Mettre à jour le nom d'utilisateur dans la base de données
-            string query = $"UPDATE utilisateurs SET username = '{newUsername}', " +
+            string query = $"UPDATE stockbase.utilisateurs SET username = '{newUsername}', " +
+                           $"password = '{password}', " +
+                           $"role = {selectedRole}," +
                            $"DATMAJ = CURRENT_TIMESTAMP WHERE Username = '{selectedUser.Username}'";
 
             DataTable result = databaseConnection.ExecuteSelectQuery(query);

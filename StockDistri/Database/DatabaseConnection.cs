@@ -20,7 +20,7 @@ public class DatabaseConnection
         server = "localhost";
         database = "stockbase";
         uid = "root";
-        password = "";
+        password = "root";
 
         string connectionString;
         connectionString = $"SERVER={server};DATABASE={database};UID={uid};PASSWORD={password};";

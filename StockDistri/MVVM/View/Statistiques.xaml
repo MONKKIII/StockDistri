@@ -1,0 +1,42 @@
+﻿<Page x:Class="StockDistri.MVVM.View.Statistiques"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StockDistri.MVVM.View"
+      mc:Ignorable="d" 
+      Height="815" Width="1535"
+      Title="Statistiques">
+
+    <Grid>
+        <!-- Conteneur principal -->
+        <StackPanel Margin="20">
+
+            <!-- Liste des utilisateurs -->
+            <ScrollViewer Height="Auto"
+                            MinHeight="775"
+                            MaxHeight="775"
+                            Background="#202020"
+                            Foreground="Gray">
+                <ListView x:Name="ArticleListView"
+                            Background="#202020"
+                            Foreground="Gray">
+                    <!-- Définition de la vue de la liste -->
+                    <ListView.View>
+                        <GridView ScrollViewer.CanContentScroll="False">
+                            <!-- Colonnes de la grille -->
+                            <GridViewColumn Header="Code Article" DisplayMemberBinding="{Binding CODART}" Width="120"/>
+                            <GridViewColumn Header="Libellé" DisplayMemberBinding="{Binding LIBART}" Width="300"/>
+                            <GridViewColumn Header="Stock" DisplayMemberBinding="{Binding STOCK}" Width="120" />
+                            <GridViewColumn Header="Prix D'Achat" DisplayMemberBinding="{Binding PA}" Width="120"/>
+                            <GridViewColumn Header="Date De Mise A Jour" DisplayMemberBinding="{Binding DATMAJ}" Width="130"/>
+                            <GridViewColumn Header="Date De Création" DisplayMemberBinding="{Binding DATCRE}" Width="130"/>
+                            <!-- Ajouter plus de colonnes si nécessaire -->
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </ScrollViewer>
+
+        </StackPanel>
+    </Grid>
+</Page>

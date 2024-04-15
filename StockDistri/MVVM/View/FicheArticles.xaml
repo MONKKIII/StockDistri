@@ -5,12 +5,11 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:StockDistri.MVVM.View"
       mc:Ignorable="d" 
-      Height="815" Width="1530"
+      Height="815" Width="1535"
       Title="FicheArticles"
       Background="White">
 
     <Border Background="#303030"
-            x:Name="ViewMenu"
             DockPanel.Dock="Top"
             VerticalAlignment="Stretch">
 
@@ -58,8 +57,7 @@
                         HorizontalAlignment="Left"
                         VerticalAlignment="Center"
                         Width="Auto"
-                        Height="Auto">
-                </TextBlock>
+                        Height="Auto"/>
 
                 <TextBox x:Name="txtCodArt" 
                         Grid.Row="0"
@@ -73,39 +71,9 @@
                         BorderBrush="#202020"
                         BorderThickness="2"
                         MinWidth="70"
-                        MaxWidth="70">
-                </TextBox>
+                        MaxWidth="70"/>
 
                 <TextBlock Grid.Row="1"
-                        Grid.Column="0"
-                        Grid.ColumnSpan="2"
-                        Margin="10"
-                        Text="Fournisseur :"
-                        IsHitTestVisible="False"
-                        Background="Transparent"
-                        Foreground="Gray"
-                        FontWeight="Bold"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Center"
-                        Width="Auto"
-                        Height="Auto">
-                </TextBlock>
-
-                <TextBox Grid.Row="1"
-                        Grid.Column="0"
-                        Grid.ColumnSpan="2"
-                        Background="Transparent"
-                        Foreground="Gray"
-                        FontWeight="Bold"
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Center"
-                        BorderBrush="#202020"
-                        BorderThickness="2"
-                        MinWidth="150"
-                        MaxWidth="200">
-                </TextBox>
-
-                <TextBlock Grid.Row="2"
                         Grid.Column="0"
                         Grid.ColumnSpan="2"
                         Margin="10"
@@ -117,11 +85,11 @@
                         HorizontalAlignment="Left"
                         VerticalAlignment="Center"
                         Width="Auto"
-                        Height="Auto">
-                </TextBlock>
+                        Height="Auto"/>
 
                 <TextBox x:Name="txtLibelle" 
-                        Grid.Row="2"
+                        IsEnabled="False"
+                        Grid.Row="1"
                         Grid.Column="0"
                         Grid.ColumnSpan="2"
                         Background="Transparent"
@@ -132,13 +100,70 @@
                         BorderBrush="#202020"
                         BorderThickness="2"
                         MinWidth="200"
-                        MaxWidth="200">
-                </TextBox>
+                        MaxWidth="200"/>
+
+                <TextBlock Grid.Row="2"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                            Margin="10"
+                            Text="Date Dernière Modification :"
+                            IsHitTestVisible="False"
+                            Background="Transparent"
+                            Foreground="Gray"
+                            FontWeight="Bold"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Width="Auto"
+                            Height="Auto"/>
+
+                <TextBox x:Name="txtDateMaj" 
+                        IsEnabled="False"
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        Background="Transparent"
+                        Foreground="Gray"
+                        FontWeight="Bold"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Top"
+                        BorderBrush="#202020"
+                        BorderThickness="2"
+                        MinWidth="200"
+                        MaxWidth="200"/>
+
+                <TextBlock Grid.Row="2"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            Margin="10"
+                            Text="Date De Création :"
+                            IsHitTestVisible="False"
+                            Background="Transparent"
+                            Foreground="Gray"
+                            FontWeight="Bold"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Bottom"
+                            Width="Auto"
+                            Height="Auto"/>
+
+                <TextBox x:Name="txtDateCre" 
+                        IsEnabled="False"
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        Background="Transparent"
+                        Foreground="Gray"
+                        FontWeight="Bold"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Bottom"
+                        BorderBrush="#202020"
+                        BorderThickness="2"
+                        MinWidth="200"
+                        MaxWidth="200"/>
 
             </Grid>
 
             <Border Grid.Column="3"
-                  Grid.RowSpan="2"
+                  Grid.RowSpan="1"
                   Background="LightYellow"
                   Margin="5"
                   CornerRadius="10">
@@ -146,7 +171,6 @@
                 <Grid>
 
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
@@ -158,56 +182,90 @@
 
                     <TextBlock Grid.Row="0"
                                Grid.Column="0"
-                               Text="Prix Brut :"
+                               Text="Prix d'achat :"
                                IsHitTestVisible="False"
                                Foreground="Gray"
                                FontWeight="Bold"
                                HorizontalAlignment="Center"
-                               VerticalAlignment="Center">
-                    </TextBlock>
+                               VerticalAlignment="Center"/>
+
+                    <TextBox Grid.Row="0"
+                             Grid.Column="1"
+                             x:Name="txtPA"
+                             Text="0.000" 
+                             IsEnabled="False"
+                             Foreground="Gray"
+                             FontWeight="Bold"
+                             HorizontalAlignment="Center"
+                             VerticalAlignment="Center"
+                             MinWidth="36"
+                             MaxWidth="36"/>
 
                     <TextBlock Grid.Row="1"
                                 Grid.Column="0"
-                                Text="Remise :"
+                                Text="Stock :"
                                 IsHitTestVisible="False"
                                 Foreground="Gray"
                                 FontWeight="Bold"
                                 HorizontalAlignment="Center"
-                                VerticalAlignment="Center">
-                    </TextBlock>
+                                VerticalAlignment="Center"/>
 
-                    <TextBlock Grid.Row="2"
-                                Grid.Column="0"
-                                Text="Prix Net :"
-                                IsHitTestVisible="False"
+                    <TextBox Grid.Row="1"
+                                Grid.Column="1"
+                                x:Name="txtStock"
+                                Text="0000"
+                                IsEnabled="False"
                                 Foreground="Gray"
                                 FontWeight="Bold"
                                 HorizontalAlignment="Center"
-                                VerticalAlignment="Center">
-                    </TextBlock>
+                                VerticalAlignment="Center"
+                                MinWidth="33"
+                                MaxWidth="33"/>
+
                 </Grid>
 
             </Border>
 
             <Button Grid.Row="3"
-                    Grid.Column="1"
+                    Grid.Column="2"
+                    x:Name="ValiderCreate"
                     Content="Valider"
-                    Click="Valider_Click"
-                    IsEnabled="{Binding ElementName=txtLibelle, Path=IsEnabled}">
-            </Button>
+                    Click="ValiderCreate_Click"
+                    IsEnabled="{Binding ElementName=txtLibelle, Path=IsEnabled}"
+                    Visibility="Collapsed"/>
 
             <Button Grid.Row="3"
                     Grid.Column="2"
-                    Content="Créer Article">
-            </Button>
+                    x:Name="ValiderModify"
+                    Content="Valider"
+                    Click="ValiderModify_Click"
+                    IsEnabled="{Binding ElementName=txtLibelle, Path=IsEnabled}"
+                    Visibility="Collapsed"/>
+
+            <Button Grid.Row="3"
+                    Grid.Column="0"
+                    x:Name="ModifyArticles"
+                    Content="Modifier Article"
+                    Click="ModifyArticles_Click"
+                    Visibility="Collapsed"/>
+
+            <Button Grid.Row="2"
+                    Grid.Column="0"
+                    x:Name="DeleteArticles"
+                    Content="Supprimer Article"
+                    Click="DeleteArticle_Click"
+                    Visibility="Collapsed"/>
+
+            <Button Grid.Row="3"
+                    Grid.Column="1"
+                    Content="Créer Article"
+                    Click="CreateArticles_Click"/>
 
             <Button Grid.Row="3"
                     Grid.Column="3"
-                    VerticalAlignment="Bottom"
                     Content="Fermer"
-                    Click="CloseFicheArticles_Click">
+                    Click="CloseFicheArticles_Click"/>
 
-            </Button>
         </Grid>
 
     </Border>

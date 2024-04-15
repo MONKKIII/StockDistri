@@ -94,8 +94,8 @@
                         Foreground="Gray"
                         FontWeight="Bold"
                         HorizontalAlignment="Left"
-                        Click="ReturnMenu_Click">
-                </Button>
+                        Click="ReturnMenu_Click"/>
+
 
                 <StackPanel Grid.Column="2"
                             HorizontalAlignment="Right"
@@ -112,7 +112,8 @@
 
                         <ComboBoxItem Content="Déconnexion" Background="#272727" Tag="LogOut"/>
 
-                        <ComboBoxItem Content="Utilisateurs" Background="#272727" Tag="ListUsers"/>
+                        <ComboBoxItem Content="Utilisateurs" Background="#272727" Tag="ListUsers"
+                                      PreviewMouseLeftButtonDown="UserMenu_PreviewMouseLeftButtonDown"/>
                         <!-- Ajoutez d'autres éléments de menu pour d'autres pages -->
                     </ComboBox>
                 </StackPanel>

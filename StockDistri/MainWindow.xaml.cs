@@ -1,5 +1,6 @@
 ﻿using StockDistri.MVVM.View;
 using System;
+using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -128,6 +129,34 @@ namespace StockDistri
 
             ComboBox comboBox = sender as ComboBox;
             comboBox.SelectedItem = null; // Réinitialiser la sélection de la ComboBox
+        }
+
+        private void UserMenu_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            // Ouvrir la fenêtre PasswordWindow pour demander le mot de passe
+            PasswordWindow passwordWindow = new PasswordWindow();
+            // Abonnez-vous à l'événement PasswordConfirmed
+            passwordWindow.PasswordConfirmed += PasswordWindow_PasswordConfirmed;
+            // Ouvrir la fenêtre modale de manière modale
+            bool? result = passwordWindow.ShowDialog();
+
+            // Empêcher la propagation de l'événement pour éviter le comportement par défaut du ComboBox
+            e.Handled = true;
+        }
+
+        private void PasswordWindow_PasswordConfirmed(bool isPasswordCorrect)
+        {
+            if (isPasswordCorrect)
+            {
+                // Le mot de passe est correct, continuer avec l'exécution du programme
+                // Par exemple, naviguer vers une page spécifique
+                mainFrame.Navigate(new ParametreUsers(navigationService));
+            }
+            else
+            {
+                // Le mot de passe est incorrect, afficher un message d'erreur
+                MessageBox.Show("Mot de passe incorrect.");
+            }
         }
 
         public void UpdateUsernameLabel()

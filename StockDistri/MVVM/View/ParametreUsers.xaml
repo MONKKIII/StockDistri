@@ -5,12 +5,13 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:StockDistri.MVVM.View"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      Height="815" Width="1535"
       Title="ParametreUsers">
 
     <Grid>
         <!-- Conteneur principal -->
         <StackPanel Margin="10">
+
             <!-- Champ de saisie pour le nom d'utilisateur -->
             <Label Content="Username:" IsHitTestVisible="False" Foreground="Gray" HorizontalAlignment="Center"/>
             <TextBox x:Name="txtUsername" Width="200" Margin="0,0,0,10"/>
@@ -19,9 +20,18 @@
             <Label Content="Password:" IsHitTestVisible="False" Foreground="Gray" HorizontalAlignment="Center"/>
             <PasswordBox x:Name="txtPassword" Width="200" Margin="0,0,0,10"/>
 
+            <!-- ComboBox pour les rôles -->
+            <Label Content="Rôle:" IsHitTestVisible="False" Foreground="Gray" HorizontalAlignment="Center"/>
+            <ComboBox x:Name="roleComboBox" Width="200" Margin="0,0,0,0">
+
+                <ComboBoxItem Content="Administrateur" Background="#272727" Foreground="Gray" Tag="0"/>
+                <ComboBoxItem Content="Magasinier" Background="#272727" Foreground="Gray" Tag="1"/>
+                <ComboBoxItem Content="Manager" Background="#272727" Foreground="Gray" Tag="2"/>
+            </ComboBox>
+
             <!-- Boutons d'action -->
             <StackPanel Orientation="Horizontal"
-                        HorizontalAlignment="Center">
+                        HorizontalAlignment="Center" Margin="20">
                 <Button Content="Valider" Width="95" Click="ValidateModify_Click" Margin="0 0 5 0"/>
                 <Button Content="Créer l'utilisateur" Width="95" Click="ParaSaveButton_Click"/>
             </StackPanel>
@@ -31,8 +41,8 @@
 
             <!-- Liste des utilisateurs -->
             <ScrollViewer Height="Auto"
-                          MinHeight="250"
-                          MaxHeight="250"
+                          MinHeight="550"
+                          MaxHeight="550"
                           Background="#202020"
                           Foreground="Gray">
                 <ListView x:Name="userListView"
@@ -51,14 +61,7 @@
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
-                            <GridViewColumn Header="Administrateur">
-                                <!-- Case à cocher pour le statut administrateur -->
-                                <GridViewColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <CheckBox IsChecked="{Binding Administrator}" IsEnabled="False" />
-                                    </DataTemplate>
-                                </GridViewColumn.CellTemplate>
-                            </GridViewColumn>
+                            <GridViewColumn Header="Rôle" DisplayMemberBinding="{Binding NameRole}" Width="120"/>
                             <GridViewColumn Header="Date Création" DisplayMemberBinding="{Binding DatCre}" Width="120"/>
                             <GridViewColumn Header="Date Mise A Jour" DisplayMemberBinding="{Binding DatMaj}" Width="120"/>
                             <!-- Ajouter plus de colonnes si nécessaire -->

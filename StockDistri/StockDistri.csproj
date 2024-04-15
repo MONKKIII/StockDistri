@@ -129,11 +129,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MVVM\View\FichesFournisseurs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVVM\View\MainMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MVVM\View\ParametreUsers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\PasswordWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\Statistiques.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -147,11 +159,20 @@
     <Compile Include="MVVM\View\FicheArticles.xaml.cs">
       <DependentUpon>FicheArticles.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MVVM\View\FichesFournisseurs.xaml.cs">
+      <DependentUpon>FichesFournisseurs.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVVM\View\MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\ParametreUsers.xaml.cs">
       <DependentUpon>ParametreUsers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\PasswordWindow.xaml.cs">
+      <DependentUpon>PasswordWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\Statistiques.xaml.cs">
+      <DependentUpon>Statistiques.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\UserLogIn.xaml.cs">
       <DependentUpon>UserLogIn.xaml</DependentUpon>

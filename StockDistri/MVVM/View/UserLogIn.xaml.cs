@@ -32,7 +32,7 @@ namespace StockDistri.MVVM.View
 
         private bool AuthenticateUser(string username, string enteredPassword, ParametreUsers ParametreUsers)
         {
-            string query = $"SELECT Password FROM utilisateurs WHERE Username = '{username}'";
+            string query = $"SELECT Password FROM stockbase.utilisateurs WHERE Username = '{username}'";
             DataTable result = databaseConnection.ExecuteSelectQuery(query);
 
             if (result != null && result.Rows.Count > 0)
